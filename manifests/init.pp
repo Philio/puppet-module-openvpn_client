@@ -12,8 +12,4 @@
 #
 class openvpn_client {
 
-  include openvpn
-  class { 'openvpn': } ->
-  Class['openvpn_client']
-
 }
