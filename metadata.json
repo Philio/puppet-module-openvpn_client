@@ -1,0 +1,27 @@
+{
+  "author": "",
+  "checksums": {
+    "Rakefile": "f37e6131fe7de9a49b09d31596f5fbf1",
+    "manifests/init.pp": "54e910f92b57e790f1d954e2664dcc54",
+    "manifests/files.pp": "e32f674abab536196d5e8579124c62c2",
+    "Modulefile": "ea7d9c75c0109214f9192d77d3bf44c1",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "tests/init.pp": "5258db185403147700fe49d32fd44709",
+    "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
+    "README.markdown": "090a1e692d9223b7a31753dafc3654e7"
+  },
+  "dependencies": [
+    {
+      "name": "luxflux/openvpn",
+      "version_requirement": "2.3.0"
+    }
+  ],
+  "description": "",
+  "license": "",
+  "name": "phil-openvpn_client",
+  "project_page": "",
+  "source": "",
+  "summary": "",
+  "types": [],
+  "version": "0.1.0"
+}
