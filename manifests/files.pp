@@ -18,6 +18,7 @@ define openvpn_client::files (
       mode   => 400;
 
     "/etc/puppet/files/openvpn/${server}/download-configs/${name}/${name}.conf":
+      ensure  => file,
       owner   => 'puppet',
       group   => 'puppet',
       mode    => 400,
@@ -25,6 +26,7 @@ define openvpn_client::files (
       require => File["/etc/puppet/files/openvpn/${server}/download-configs/${name}"];
 
     "/etc/puppet/files/openvpn/${server}/download-configs/${name}/keys/ca.crt":
+      ensure  => file,
       owner   => 'puppet',
       group   => 'puppet',
       mode    => 400,
@@ -32,6 +34,7 @@ define openvpn_client::files (
       require => File["/etc/puppet/files/openvpn/${server}/download-configs/${name}/keys"];
       
     "/etc/puppet/files/openvpn/${server}/download-configs/${name}/keys/${name}.crt":
+      ensure  => file,
       owner   => 'puppet',
       group   => 'puppet',
       mode    => 400,
@@ -39,6 +42,7 @@ define openvpn_client::files (
       require => File["/etc/puppet/files/openvpn/${server}/download-configs/${name}/keys"];
       
     "/etc/puppet/files/openvpn/${server}/download-configs/${name}/keys/${name}.key":
+      ensure  => file,
       owner   => 'puppet',
       group   => 'puppet',
       mode    => 400,
