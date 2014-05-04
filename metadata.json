@@ -2,9 +2,12 @@
   "author": "",
   "checksums": {
     "Rakefile": "f37e6131fe7de9a49b09d31596f5fbf1",
-    "manifests/init.pp": "1a8226a2e6cd06dfc0b41a7a2b1fe3b9",
+    "manifests/install.pp": "a766956ae6d9c3cc492fcc3ec9242c14",
+    "manifests/init.pp": "36559a5797b52ac6452538bbfb7573f1",
     "manifests/files.pp": "708a873ca6cd2d75614ddbb8ff81d283",
-    "Modulefile": "ea7d9c75c0109214f9192d77d3bf44c1",
+    "manifests/service.pp": "ff29b9ae1ad87f22d5626dd44cf55ef9",
+    "manifests/client.pp": "5a78d7ca8001646d0d20ef3a4bbb3a84",
+    "Modulefile": "7754f6812cdcd853c3ef875a6eacee91",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "tests/init.pp": "5258db185403147700fe49d32fd44709",
     "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
@@ -12,13 +15,17 @@
   },
   "dependencies": [
     {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": "4.1.0"
+    },
+    {
       "name": "luxflux/openvpn",
       "version_requirement": "2.3.0"
     }
   ],
   "description": "",
   "license": "",
-  "name": "phil-openvpn_client",
+  "name": "codacity-openvpn_client",
   "project_page": "",
   "source": "",
   "summary": "",

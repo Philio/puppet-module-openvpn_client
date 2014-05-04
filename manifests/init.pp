@@ -12,4 +12,8 @@
 #
 class openvpn_client {
 
+   class { 'openvpn_client::install': } ~>
+   class { 'openvpn_client::service': } ->
+   Class['openvpn_client']
+
 }
