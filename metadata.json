@@ -6,7 +6,7 @@
     "manifests/init.pp": "36559a5797b52ac6452538bbfb7573f1",
     "manifests/files.pp": "708a873ca6cd2d75614ddbb8ff81d283",
     "manifests/service.pp": "ff29b9ae1ad87f22d5626dd44cf55ef9",
-    "manifests/client.pp": "5a78d7ca8001646d0d20ef3a4bbb3a84",
+    "manifests/client.pp": "754d3cda8c428cd1bb2c9e517c945d16",
     "Modulefile": "7754f6812cdcd853c3ef875a6eacee91",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "tests/init.pp": "5258db185403147700fe49d32fd44709",
