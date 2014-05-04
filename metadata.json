@@ -3,7 +3,7 @@
   "checksums": {
     "Rakefile": "f37e6131fe7de9a49b09d31596f5fbf1",
     "manifests/init.pp": "1a8226a2e6cd06dfc0b41a7a2b1fe3b9",
-    "manifests/files.pp": "665c1774cb37399f4dab19e15a56d11e",
+    "manifests/files.pp": "708a873ca6cd2d75614ddbb8ff81d283",
     "Modulefile": "ea7d9c75c0109214f9192d77d3bf44c1",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "tests/init.pp": "5258db185403147700fe49d32fd44709",

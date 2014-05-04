@@ -12,16 +12,37 @@ define openvpn_client::files (
       "/etc/puppet/files/openvpn/${server}/download-configs",
       "/etc/puppet/files/openvpn/${server}/download-configs/${name}",
       "/etc/puppet/files/openvpn/${server}/download-configs/${name}/keys" ]:
-      ensure => "directory",
+      ensure => directory,
       owner  => 'puppet',
       group  => 'puppet',
       mode   => 400;
+
+    "/etc/puppet/files/openvpn/${server}/download-configs/${name}/${name}.conf":
+      owner   => 'puppet',
+      group   => 'puppet',
+      mode    => 400,
+      source  => "/etc/openvpn/${server}/download-configs/${name}/${name}.conf",
+      require => File["/etc/puppet/files/openvpn/${server}/download-configs/${name}"];
 
     "/etc/puppet/files/openvpn/${server}/download-configs/${name}/keys/ca.crt":
       owner   => 'puppet',
       group   => 'puppet',
       mode    => 400,
       source  => "/etc/openvpn/${server}/download-configs/${name}/keys/ca.crt",
+      require => File["/etc/puppet/files/openvpn/${server}/download-configs/${name}/keys"];
+      
+    "/etc/puppet/files/openvpn/${server}/download-configs/${name}/keys/${name}.crt":
+      owner   => 'puppet',
+      group   => 'puppet',
+      mode    => 400,
+      source  => "/etc/openvpn/${server}/download-configs/${name}/keys/${name}.crt",
+      require => File["/etc/puppet/files/openvpn/${server}/download-configs/${name}/keys"];
+      
+    "/etc/puppet/files/openvpn/${server}/download-configs/${name}/keys/${name}.key":
+      owner   => 'puppet',
+      group   => 'puppet',
+      mode    => 400,
+      source  => "/etc/openvpn/${server}/download-configs/${name}/keys/${name}.key",
       require => File["/etc/puppet/files/openvpn/${server}/download-configs/${name}/keys"];
   }
 
