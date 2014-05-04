@@ -27,7 +27,6 @@ define openvpn_client::files (
 
     "/etc/puppet/files/openvpn/${server}/download-configs/${name}/keys/ca.crt":
       ensure  => file,
-      links   => follow,
       owner   => 'puppet',
       group   => 'puppet',
       mode    => 400,
@@ -36,7 +35,6 @@ define openvpn_client::files (
       
     "/etc/puppet/files/openvpn/${server}/download-configs/${name}/keys/${name}.crt":
       ensure  => file,
-      links   => follow,
       owner   => 'puppet',
       group   => 'puppet',
       mode    => 400,
@@ -45,7 +43,6 @@ define openvpn_client::files (
       
     "/etc/puppet/files/openvpn/${server}/download-configs/${name}/keys/${name}.key":
       ensure  => file,
-      links   => follow,
       owner   => 'puppet',
       group   => 'puppet',
       mode    => 400,
