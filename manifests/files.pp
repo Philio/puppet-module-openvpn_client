@@ -2,16 +2,36 @@ define openvpn_client::files (
   $server,
 ) {
   
-  include openvpn_client::setup
   Openvpn::Server[$server] ->
   Openvpn::Client[$name] ->
-  class { 'openvpn_client::setup': } ->
   Openvpn_client::Files[$name]
 
+  ensure_resource('file', '/etc/puppet/files/openvpn', {
+      ensure => directory,
+      owner  => 'puppet',
+      group  => 'puppet',
+      mode   => 400
+    }
+  )
+  
+  ensure_resource('file', "/etc/puppet/files/openvpn/${server}", {
+      ensure => directory,
+      owner  => 'puppet',
+      group  => 'puppet',
+      mode   => 400
+    }
+  )
+  
+  ensure_resource('file', "/etc/puppet/files/openvpn/${server}/download-configs", {
+      ensure => directory,
+      owner  => 'puppet',
+      group  => 'puppet',
+      mode   => 400
+    }
+  )
+
   file {
-    [ "/etc/puppet/files/openvpn/${server}",
-      "/etc/puppet/files/openvpn/${server}/download-configs",
-      "/etc/puppet/files/openvpn/${server}/download-configs/${name}",
+    [ "/etc/puppet/files/openvpn/${server}/download-configs/${name}",
       "/etc/puppet/files/openvpn/${server}/download-configs/${name}/keys" ]:
       ensure => directory,
       owner  => 'puppet',
