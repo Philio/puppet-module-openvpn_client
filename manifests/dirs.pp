@@ -1,11 +1,9 @@
-define openvpn_client::dirs (
-  $server,
-) {
+define openvpn_client::dirs {
 
   file {
     [ "/etc/puppet/files/openvpn",
-      "/etc/puppet/files/openvpn/${server}",
-      "/etc/puppet/files/openvpn/${server}/download-configs" ]:
+      "/etc/puppet/files/openvpn/${name}",
+      "/etc/puppet/files/openvpn/${name}/download-configs" ]:
       ensure => directory,
       owner  => 'puppet',
       group  => 'puppet',

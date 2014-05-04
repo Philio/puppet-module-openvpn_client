@@ -11,8 +11,8 @@
     "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
     "README.markdown": "090a1e692d9223b7a31753dafc3654e7",
     "manifests/init.pp": "36559a5797b52ac6452538bbfb7573f1",
-    "manifests/files.pp": "ca697830feb55fb01ad2503eda5b00a5",
-    "manifests/dirs.pp": "777d6028c286ec574d6b310ef268373c"
+    "manifests/files.pp": "fa177d92375561f2567b347526ae7c67",
+    "manifests/dirs.pp": "ce922da60c456cd49fefc50b4955b7a5"
   },
   "dependencies": [
     {

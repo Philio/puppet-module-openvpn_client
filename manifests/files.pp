@@ -4,7 +4,7 @@ define openvpn_client::files (
   
   Openvpn::Server[$server] ->
   Openvpn::Client[$name] ->
-  Openvpn_client::Dirs[$name] ->
+  Openvpn_client::Dirs[$server] ->
   Openvpn_client::Files[$name]
 
   file {
