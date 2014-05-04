@@ -3,15 +3,16 @@
   "checksums": {
     "Rakefile": "f37e6131fe7de9a49b09d31596f5fbf1",
     "manifests/install.pp": "a766956ae6d9c3cc492fcc3ec9242c14",
-    "manifests/init.pp": "36559a5797b52ac6452538bbfb7573f1",
-    "manifests/files.pp": "29d695b73519d37ce1f3006e35104108",
     "manifests/service.pp": "ff29b9ae1ad87f22d5626dd44cf55ef9",
     "manifests/client.pp": "754d3cda8c428cd1bb2c9e517c945d16",
     "Modulefile": "7754f6812cdcd853c3ef875a6eacee91",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "tests/init.pp": "5258db185403147700fe49d32fd44709",
     "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
-    "README.markdown": "090a1e692d9223b7a31753dafc3654e7"
+    "README.markdown": "090a1e692d9223b7a31753dafc3654e7",
+    "manifests/init.pp": "36559a5797b52ac6452538bbfb7573f1",
+    "manifests/files.pp": "ca697830feb55fb01ad2503eda5b00a5",
+    "manifests/dirs.pp": "777d6028c286ec574d6b310ef268373c"
   },
   "dependencies": [
     {
