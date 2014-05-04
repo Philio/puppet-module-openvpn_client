@@ -30,7 +30,7 @@ define openvpn_client::files (
       owner   => 'puppet',
       group   => 'puppet',
       mode    => 400,
-      source  => "/etc/openvpn/${server}/download-configs/${name}/keys/ca.crt",
+      source  => "/etc/openvpn/${server}/easy-rsa/keys/ca.crt",
       require => File["/etc/puppet/files/openvpn/${server}/download-configs/${name}/keys"];
       
     "/etc/puppet/files/openvpn/${server}/download-configs/${name}/keys/${name}.crt":
@@ -38,7 +38,7 @@ define openvpn_client::files (
       owner   => 'puppet',
       group   => 'puppet',
       mode    => 400,
-      source  => "/etc/openvpn/${server}/download-configs/${name}/keys/${name}.crt",
+      source  => "/etc/openvpn/${server}/easy-rsa/keys/${name}.crt",
       require => File["/etc/puppet/files/openvpn/${server}/download-configs/${name}/keys"];
       
     "/etc/puppet/files/openvpn/${server}/download-configs/${name}/keys/${name}.key":
@@ -46,7 +46,7 @@ define openvpn_client::files (
       owner   => 'puppet',
       group   => 'puppet',
       mode    => 400,
-      source  => "/etc/openvpn/${server}/download-configs/${name}/keys/${name}.key",
+      source  => "/etc/openvpn/${server}/easy-rsa/keys/${name}.key",
       require => File["/etc/puppet/files/openvpn/${server}/download-configs/${name}/keys"];
   }
 
