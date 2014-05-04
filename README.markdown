@@ -1,8 +1,8 @@
 # OpenVPN Client Puppet Module #
 
-This module works with luxflux/openvpn to automate VPN client deployment to
+This module works with [luxflux/openvpn](https://github.com/luxflux/puppet-openvpn) to automate VPN client deployment to
 servers managed by puppet. It achieves this by copying configs created by
-luxflux/openvpn to the puppet file server and which are then pulled to clients
+[luxflux/openvpn](https://github.com/luxflux/puppet-openvpn) to the puppet file server and which are then pulled to clients
 and installed.
 
 Sample Usage:
