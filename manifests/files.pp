@@ -2,13 +2,16 @@ define openvpn_client::files (
   $server,
 ) {
   
+  include openvpn_client::setup
   Openvpn::Server[$server] ->
   Openvpn::Client[$name] ->
-  Openvpn_client::Dirs[$server] ->
+  class { 'openvpn_client::setup': } ->
   Openvpn_client::Files[$name]
 
   file {
-    [ "/etc/puppet/files/openvpn/${server}/download-configs/${name}",
+    [ "/etc/puppet/files/openvpn/${server}",
+      "/etc/puppet/files/openvpn/${server}/download-configs",
+      "/etc/puppet/files/openvpn/${server}/download-configs/${name}",
       "/etc/puppet/files/openvpn/${server}/download-configs/${name}/keys" ]:
       ensure => directory,
       owner  => 'puppet',
