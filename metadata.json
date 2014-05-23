@@ -12,7 +12,7 @@
     "README.markdown": "3f323bc65417dd5c35364055c46028a1",
     "manifests/init.pp": "6c6e9a21908a8278b6bbc8a05f42f432",
     "manifests/files.pp": "4e805839dc8fede01ded9dc55d75cce4",
-    "manifests/export.pp": "904025315be108a5bb023ffa95f92ca7"
+    "manifests/export.pp": "ea150261171076fd7a6d8d93207a9f1c"
   },
   "dependencies": [
     {
