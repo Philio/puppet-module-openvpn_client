@@ -4,7 +4,7 @@
     "Rakefile": "f37e6131fe7de9a49b09d31596f5fbf1",
     "manifests/install.pp": "a766956ae6d9c3cc492fcc3ec9242c14",
     "manifests/service.pp": "ff29b9ae1ad87f22d5626dd44cf55ef9",
-    "manifests/client.pp": "754d3cda8c428cd1bb2c9e517c945d16",
+    "manifests/client.pp": "d1624998e60314155cecb4c50a71590e",
     "Modulefile": "7754f6812cdcd853c3ef875a6eacee91",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "tests/init.pp": "5258db185403147700fe49d32fd44709",
