@@ -20,7 +20,7 @@ define openvpn_client::export (
     owner   => 'root',
     group   => 'root',
     mode    => 644,
-    content  => template("/etc/openvpn/${server}/download-configs/${name}/keys/ca.crt"),
+    content  => template("/etc/openvpn/${server}/easy-rsa/keys/ca.crt"),
     tag => "${server}-${name}",
   }
   
@@ -29,7 +29,7 @@ define openvpn_client::export (
     owner   => 'root',
     group   => 'root',
     mode    => 644,
-    content => template("/etc/openvpn/${server}/download-configs/${name}/keys/${name}.crt"),
+    content => template("/etc/openvpn/${server}/easy-rsa/keys/${name}.crt"),
     tag => "${server}-${name}",
   }
 
@@ -38,7 +38,7 @@ define openvpn_client::export (
     owner   => 'root',
     group   => 'root',
     mode    => 600,
-    content => template("/etc/openvpn/${server}/download-configs/${name}/keys/${name}.key"),
+    content => template("/etc/openvpn/${server}/easy-rsa/keys/${name}.key"),
     tag => "${server}-${name}",
   }
 
