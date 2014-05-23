@@ -11,7 +11,7 @@ define openvpn_client::export (
     owner => 'root',
     group => 'root',
     mode => 644,
-    content  => "/etc/openvpn/${server}/download-configs/${name}/${name}.conf",
+    content  => template("/etc/openvpn/${server}/download-configs/${name}/${name}.conf"),
     tag => "${server}-${name}",
   }
   
