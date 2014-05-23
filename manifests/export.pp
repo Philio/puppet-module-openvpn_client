@@ -15,4 +15,31 @@ define openvpn_client::export (
     tag => "${server}-${name}",
   }
   
+  @@file { "/etc/openvpn/keys/ca.crt":
+    ensure  => file,
+    owner   => 'root',
+    group   => 'root',
+    mode    => 644,
+    content  => template("/etc/openvpn/${server}/download-configs/${name}/keys/ca.crt"),
+    tag => "${server}-${name}",
+  }
+  
+  @@file { "/etc/openvpn/keys/${name}.crt":
+    ensure  => file,
+    owner   => 'root',
+    group   => 'root',
+    mode    => 644,
+    content => template("/etc/openvpn/${server}/download-configs/${name}/keys/${name}.crt"),
+    tag => "${server}-${name}",
+  }
+
+  @@file { "/etc/openvpn/keys/${name}.key":
+    ensure  => file,
+    owner   => 'root',
+    group   => 'root',
+    mode    => 600,
+    content => template("/etc/openvpn/${server}/download-configs/${name}/keys/${name}.key"),
+    tag => "${server}-${name}",
+  }
+
 }
