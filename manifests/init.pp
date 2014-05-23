@@ -5,6 +5,8 @@
 # luxflux/openvpn to the puppet file server and which are then pulled to clients
 # and installed.
 #
+# Currently the VPN server must be on the same host as the puppet master.
+#
 # Parameters: none
 #
 # Requires: see Modulefile

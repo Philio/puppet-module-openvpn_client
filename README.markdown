@@ -5,6 +5,8 @@ servers managed by puppet. It achieves this by copying configs created by
 [luxflux/openvpn](https://github.com/luxflux/puppet-openvpn) to the puppet file server and which are then pulled to clients
 and installed.
 
+Currently the VPN server must be on the same host as the puppet master.
+
 Sample Usage:
 
 * Copying configuration files to the file server on the puppet master node:  
