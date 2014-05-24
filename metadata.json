@@ -11,7 +11,7 @@
     "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
     "README.markdown": "3f323bc65417dd5c35364055c46028a1",
     "lib/facter/openvpn_client_cert_data.rb": "fc7800cd1daeda0521cf6f1f43441376",
-    "manifests/init.pp": "08c1bda03eba2d9d2b0037f42d7e8d08",
+    "manifests/init.pp": "75b9ddb98b804f9675fe29703e359b9f",
     "manifests/export.pp": "e58ab594d6a9d2753849d0771cad3331"
   },
   "dependencies": [

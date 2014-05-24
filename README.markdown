@@ -1,22 +1,21 @@
 # OpenVPN Client Puppet Module #
 
 This module works with [luxflux/openvpn](https://github.com/luxflux/puppet-openvpn) to automate VPN client deployment to
-servers managed by puppet. It achieves this by copying configs created by
-[luxflux/openvpn](https://github.com/luxflux/puppet-openvpn) to the puppet file server and which are then pulled to clients
-and installed.
-
-Currently the VPN server must be on the same host as the puppet master.
+servers managed by puppet. It achieves this by creating exported resources of
+the configs created by [luxflux/openvpn](https://github.com/luxflux/puppet-openvpn) and deploying them on the clients.
 
 Sample Usage:
 
-* Copying configuration files to the file server on the puppet master node:  
+* Exporting the configurations for a client defined by [luxflux/openvpn](https://github.com/luxflux/puppet-openvpn) in the
+VPN server manifest:  
 
-        openvpn_client::files { 'my_client':  
+        openvpn_client::export { 'my_client':  
           server => 'openvpn',  
         }  
       
-* Installing and starting the OpenVPN client on a configured node:  
+* Installation, configuration and starting the OpenVPN client in a configured
+node manifest:  
 
-        openvpn_client::client { 'my_client:  
+        openvpn_client::import { 'my_client:  
           server => 'openvpn',  
         }  

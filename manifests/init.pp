@@ -10,14 +10,15 @@
 #
 # Sample Usage:
 #
-# * Exporting the configurations for a client defined by luxflux/openvpn:
+# * Exporting the configurations for a client defined by luxflux/openvpn in the
+#   VPN server manifest:
 #
 #     openvpn_client::export { 'my_client':
 #       server => 'openvpn',
 #     }
 #
-# * Installation, configuration and starting the OpenVPN client on a configured
-#   node:
+# * Installation, configuration and starting the OpenVPN client in a configured
+#   node manifest:
 #
 #     openvpn_client::import { 'my_client:
 #       server => 'openvpn',
