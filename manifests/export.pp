@@ -6,6 +6,12 @@ define openvpn_client::export (
   Openvpn::Client[$name] ->
   Openvpn_client::Export[$name]
   
+  if $::openvpn_cert_data {
+    $data = $::openvpn_cert_data
+  } else {
+    fail ('openvpn_cert_data not defined, is pluginsync enabled?')
+  }
+  
 #  @@file { "/etc/openvpn/${name}.conf":
 #    ensure => file,
 #    owner => 'root',
