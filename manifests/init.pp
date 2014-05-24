@@ -19,7 +19,7 @@
 # * Installation, configuration and starting the OpenVPN client on a configured
 #   node:
 #
-#     openvpn_client::client { 'my_client:
+#     openvpn_client::import { 'my_client:
 #       server => 'openvpn',
 #     }
 #

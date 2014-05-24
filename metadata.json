@@ -3,7 +3,7 @@
   "checksums": {
     "Rakefile": "f37e6131fe7de9a49b09d31596f5fbf1",
     "manifests/install.pp": "a766956ae6d9c3cc492fcc3ec9242c14",
-    "manifests/import.pp": "1a7a5bbabd437f5d2276ed9cccdba7d2",
+    "manifests/import.pp": "1cbeba41bddbed0004b3519c9900a26c",
     "manifests/service.pp": "ff29b9ae1ad87f22d5626dd44cf55ef9",
     "Modulefile": "7754f6812cdcd853c3ef875a6eacee91",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
@@ -11,7 +11,7 @@
     "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
     "README.markdown": "3f323bc65417dd5c35364055c46028a1",
     "lib/facter/openvpn_client_cert_data.rb": "fc7800cd1daeda0521cf6f1f43441376",
-    "manifests/init.pp": "a7f0c6d484ab4804949e0e3a4779d173",
+    "manifests/init.pp": "08c1bda03eba2d9d2b0037f42d7e8d08",
     "manifests/export.pp": "e58ab594d6a9d2753849d0771cad3331"
   },
   "dependencies": [
