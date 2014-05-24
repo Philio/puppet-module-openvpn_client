@@ -12,7 +12,7 @@
     "README.markdown": "3f323bc65417dd5c35364055c46028a1",
     "lib/facter/openvpn_cert_data.rb": "eca12cc3e6d36639f116dd6cb403481c",
     "manifests/init.pp": "a7f0c6d484ab4804949e0e3a4779d173",
-    "manifests/export.pp": "cdb44c12abaea718d2a8296a13fc9aaf"
+    "manifests/export.pp": "68192ffe759d7797c5824e7b34fad9db"
   },
   "dependencies": [
     {
