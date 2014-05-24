@@ -1,4 +1,4 @@
-Facter.add(:openvpn_cert_data) do
+Facter.add("openvpn_cert_data") do
   setcode do
     clients = {}
     path = '/etc/openvpn'
