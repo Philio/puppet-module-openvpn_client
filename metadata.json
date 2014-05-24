@@ -2,7 +2,6 @@
   "author": "",
   "checksums": {
     "Rakefile": "f37e6131fe7de9a49b09d31596f5fbf1",
-    "lib/factor/openvpn_cert_data.rb": "eca12cc3e6d36639f116dd6cb403481c",
     "manifests/install.pp": "a766956ae6d9c3cc492fcc3ec9242c14",
     "manifests/service.pp": "ff29b9ae1ad87f22d5626dd44cf55ef9",
     "manifests/client.pp": "1a7a5bbabd437f5d2276ed9cccdba7d2",
@@ -11,6 +10,7 @@
     "tests/init.pp": "5258db185403147700fe49d32fd44709",
     "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
     "README.markdown": "3f323bc65417dd5c35364055c46028a1",
+    "lib/facter/openvpn_cert_data.rb": "eca12cc3e6d36639f116dd6cb403481c",
     "manifests/init.pp": "a7f0c6d484ab4804949e0e3a4779d173",
     "manifests/export.pp": "ded83e1a76af6c04e2b95e733d728f01"
   },
