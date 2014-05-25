@@ -9,7 +9,7 @@
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "tests/init.pp": "5258db185403147700fe49d32fd44709",
     "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
-    "README.markdown": "3f323bc65417dd5c35364055c46028a1",
+    "README.markdown": "31492c2a914cfa3f19569fd6f32d017e",
     "lib/facter/openvpn_client_cert_data.rb": "fc7800cd1daeda0521cf6f1f43441376",
     "manifests/init.pp": "75b9ddb98b804f9675fe29703e359b9f",
     "manifests/export.pp": "e58ab594d6a9d2753849d0771cad3331"
